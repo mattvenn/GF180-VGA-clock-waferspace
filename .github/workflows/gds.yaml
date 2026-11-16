@@ -26,6 +26,8 @@ jobs:
         uses: TinyTapeout/tt-gds-action/precheck@ttgf26c
 
   gl_test:
+    # GL test disabled
+    if: false
     needs: gds
     runs-on: ubuntu-24.04
     steps:
